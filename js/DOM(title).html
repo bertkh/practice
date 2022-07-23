@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="main-heading">Hello, World!</h1>
+
+    <script>
+    var headingElement = document.getElementById("main-heading");
+    console.log(headingElement.innerHTML);
+    var newHeadingText = prompt("Write new title:");
+    headingElement.innerHTML = newHeadingText;
+    $("#h1").slideUp(1000).slideDown(1000);
+    </script>
+</body>
+</html>

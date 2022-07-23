@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>friends</title>
+</head>
+<body>
+   <h1>Hello, World!</h1>
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        var friends = ["Tommy", "Garakiro", "Keyreal"]; {
+            for (var i = 0; i < 1; i++) {
+                $("body").append("<p>" + "da " + friends[0] + "</p>");
+                $("body").append("<p>" + " the " + friends[1] + "</p>");
+                $("body").append("<p>" + " Ze " + friends[2] + "</p>");
+                $("h1").text("Ma friends");
+                $("p").append(" the best!!!");
+            var fadeTime;
+            for (var j = 0; j < 5; j++) {
+                fadeTime = (j + 1) * 1000;
+                $("h1").fadeOut(fadeTime / 2).fadeIn(fadeTime / 2);
+            };
+                $("h1").fadeTo(2000, 0.5);
+                $("p").fadeOut(2000).delay(800);
+                $("p").fadeIn(1000);
+
+            }
+        }
+    </script>
+</body>
+</html>
