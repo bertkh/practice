@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+    <script>
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "Red";
+
+//            for (var i = 0; i < 8; i++) {
+//                ctx.fillRect(i * 10, i * 10, 10, 10);
+        ctx.fillRect(50, 0, 50, 50);
+        ctx.fillRect(70, 50, 10, 20);
+        ctx.fillRect(15, 70, 120, 10);
+        ctx.fillRect(50, 80, 50, 50);
+        ctx.fillRect(100, 80, 10, 100);
+        ctx.fillRect(40, 80, 10, 100);
+
+        ctx.fillStyle = "#000";
+        ctx.fillRect(200, 50, 50, 100);
+
+        ctx.fillStyle = "Pink";
+        ctx.fillRect(250, 50, 50, 100);
+
+        ctx.fillStyle = "Green";
+        ctx.fillRect(300, 50, 50, 100);
+
+        ctx.strokeStyle = "DeepPink";
+        ctx.lineWidth = 4;
+        ctx.strokeRect(10, 200, 100, 20);
+
+        ctx.strokeStyle = "Turquoise";
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.moveTo(200, 200);
+        ctx.lineTo(260, 260);
+        ctx.moveTo(260, 200);
+        ctx.lineTo(200, 260);
+        ctx.stroke();
+
+
+        ctx.strokeStyle = "#fcda20";
+        ctx.lineWidth = 4;
+        ctx.strokeRect(100, 300, 20, 20);
+        ctx.beginPath();
+        ctx.moveTo(110, 320);
+        ctx.lineTo(110, 370);
+
+        ctx.moveTo(90, 330);
+        ctx.lineTo(110, 340);
+
+        ctx.moveTo(110, 340);
+        ctx.lineTo(130, 330);
+
+        ctx.moveTo(110, 370);
+        ctx.lineTo(90, 400);
+
+        ctx.moveTo(110, 370);
+        ctx.lineTo(130, 400);
+        ctx.stroke();
+
+        ctx.fillStyle = "Blue";
+        ctx.beginPath();
+        ctx.moveTo(300, 300);
+        ctx.lineTo(300, 260);
+        ctx.lineTo(330, 230);
+        ctx.lineTo(360, 260);
+        ctx.lineTo(360, 300);
+        ctx.lineTo(300, 300);
+        ctx.fill();
+
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "Green";
+
+        ctx.beginPath();
+        ctx.arc(450, 50, 20, 0, Math.PI / 2, false);
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(450, 100, 20, 0, Math.PI, true);
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(450, 150, 20, 0, Math.PI * 2, false);
+        ctx.stroke();
+
+        let circle = function (x, y, radius) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+            ctx.stroke();
+        };
+
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "Red";
+        circle(400, 400, 10);
+
+
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "Orange";
+        circle(400, 400, 20);
+
+
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "Black";
+        circle(400, 400, 30);
+
+
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "Green";
+        circle(400, 400, 40);
+
+
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "Yellow";
+        circle(400, 400, 50);
+
+
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "Violet";
+        circle(400, 400, 60);
+
+
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "Black";
+        circle(500, 500, 30);
+        circle(500, 570, 40);
+
+
+        let circleFill = function (x, y, radius) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+            ctx.fill();
+        };
+
+        ctx.fillStyle = "Orange";
+        circleFill(490, 495, 5);
+        circleFill(510, 495, 5);
+        ctx.fillStyle = "Violet";
+        circleFill(500, 505, 5);
+        ctx.fillStyle = "#83d1f4";
+        circleFill(500, 550, 5);
+        circleFill(500, 570, 5);
+        circleFill(500, 590, 5);
+
+
+//            }
+    </script>
+</body>
+</html>
